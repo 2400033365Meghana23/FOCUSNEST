@@ -1,0 +1,191 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+}
+
+/* BASE */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #f4f6f8;
+}
+
+/* APP CONTAINER */
+.app {
+  min-height: 100vh;
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(135deg, #2ebf91, #6dd5fa);
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+header p {
+  margin: 8px 0 15px;
+  font-size: 1rem;
+}
+
+/* THEME BUTTON */
+header button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 20px;
+  background: white;
+  color: #2ebf91;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* DASHBOARD */
+.dashboard {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 25px;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+/* CARD */
+.card {
+  background: white;
+  width: 260px;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+/* INPUTS */
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* BUTTONS */
+button {
+  padding: 8px 12px;
+  margin-right: 6px;
+  border: none;
+  border-radius: 8px;
+  background: #2ebf91;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* LIST */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #f1f1f1;
+  margin: 6px 0;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #555;
+}
+
+/* DARK MODE */
+.dark {
+  background: #121212;
+  color: white;
+}
+
+.dark header {
+  background: linear-gradient(135deg, #141e30, #243b55);
+}
+
+.dark .card {
+  background: #1e1e1e;
+  color: white;
+}
+
+.dark input,
+.dark textarea {
+  background: #2b2b2b;
+  color: white;
+  border: 1px solid #444;
+}
+
+.dark li {
+  background: #2a2a2a;
+}
+
+.dark footer {
+  color: #aaa;
+}
+
+/* NAVIGATION */
+.nav {
+  margin: 15px 0;
+}
+
+.nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+.nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding-bottom: 4px;
+}
+
+.nav a.active {
+  border-bottom: 2px solid white;
+}
+
+.dashboard {
+  animation: fadeIn 0.4s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
