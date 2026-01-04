@@ -1,4 +1,4 @@
-# 🌿 FOCUSNEST  
+#  FOCUSNEST  
 ### *Your calm space to focus, plan & grow*
 
 <p align="center">
